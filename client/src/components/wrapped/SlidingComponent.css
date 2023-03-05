@@ -1,0 +1,79 @@
+.sliding-container {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 500px;
+    height: 80px;
+}
+
+.message-list {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s;
+}
+
+.message {
+    flex: 0 0 auto;
+    height: 100%;
+    padding: 20px;
+    background-color: #ececec;
+    border-radius: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 132px;
+    max-height: 132px;
+    background: linear-gradient(to right, transparent, #ccb5f1, transparent);
+
+}
+
+.slider-text {
+    background: linear-gradient(to right, transparent, rgb(247, 201, 115), transparent);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+.fade-out {
+  opacity: 0.5;
+}
+
+.slider-content {
+    padding-top: 25px;
+    max-width: 278px;
+}
+
+.slider-value {
+    max-height: 45px;
+    overflow-y: hidden;
+    font-size: 20px;
+    max-width: 270px;
+    color:rgb(0, 134, 187)
+}
+
+.total {
+    color:rgb(243, 159, 4);
+    font-weight: bolder;
+}
+
+.sent {
+    font-weight: bolder;
+    color: rgb(7, 130, 7);
+}
+
+.received {
+    font-weight: bolder;
+    color: rgb(239, 96, 89);
+}
+
+.topfriend {
+    font-weight: bolder;
+    color: rgb(0, 189, 167);
+}
+
+.fav-word {
+    color:rgb(243, 135, 4);
+    font-weight: bolder;
+}

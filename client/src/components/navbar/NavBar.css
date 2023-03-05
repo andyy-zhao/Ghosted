@@ -1,0 +1,43 @@
+.navbar-brand {
+    background: linear-gradient(to right, #87CEFA, #EE82EE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 150;
+    --chakra-fonts-body: Roboto;
+}
+
+.website-name {
+    background: linear-gradient(to right, #87CEFA, #EE82EE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 20px;
+}
+
+.website-name-1 {
+    padding-left: 20px;
+    color: #9F7AEA;
+}
+  
+.website-name-small {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.main-nav-container {
+    margin-top: .6rem;
+}
+
+.nav-link {
+    margin-right: 50px;
+}
+.navbar .nav-link:last-child {
+    margin-right: 0;    
+}
+
+.nav-right-navs {
+    color:#805AD5 !important;
+    font-size: 20px;
+    font-weight: 250;
+    --chakra-fonts-body: Roboto;
+}

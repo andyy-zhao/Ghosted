@@ -1,0 +1,77 @@
+.footer-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title-row {
+    font-size: 30px;
+}
+
+.first-col {
+    align-items: start;
+    text-align: left;
+    margin-left: 70px;
+    padding-right: 30px;
+}
+.footer-location-img {
+    width: 20px;
+}
+
+.first-col-2nd-row {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.second-col {
+    margin-left: 60px;
+}
+
+.second-col-first {
+    font-weight: bolder;
+    text-align: left;
+}
+
+.product-icon {
+    width: 25px;
+    padding-right: 7px;
+}
+
+.second-col-rest {
+    padding-top: 15px;
+    text-align: left;
+}
+
+.github-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255)
+}
+
+.btn-desc {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.github-icon {
+    width: 20px;
+    align-items: center;
+    align-content: center;
+}
+.github-icon {
+    margin-right: 8px;
+}
+  
+.third-col-first {
+    font-weight: bolder;
+}
+
+.third-col-rest {
+    padding-top: 15px;
+    text-align: left;
+    margin-left: 160px;
+}

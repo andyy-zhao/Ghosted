@@ -1,0 +1,67 @@
+.container-sent {
+    display: flex;
+    padding-left: 89px;
+    align-items: center;
+    margin-bottom: 15px;
+    clear: both;
+}
+  
+.rectangle {
+    width: 40px;
+    height: 15px;
+    margin-right: 5px;
+    background-color: blue;
+}
+
+.rectangle:hover {
+    border: 1px solid black;
+}
+
+.tooltip {
+    opacity: 0.9;
+}
+
+.rec-desc {
+    padding-right: 40px;
+    margin-top: -.4rem;
+}
+
+.container-received {
+    display: flex;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rec-desc-received {
+    padding-right: 37px;
+}
+
+.labels {
+    clear: both;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 160px;
+    font-weight: 50;
+}
+
+.label-1 {
+    /* margin-right: auto; pushes the label to the left */
+    align-self: flex-start;
+    margin-right: 40px;
+}
+  
+.label-2 {
+    /* margin: 0 auto; centers the label */
+    /* align-self: center; */
+    margin-right: auto;
+    margin-left: 25.5rem;
+}
+  
+.label-3 {
+    /* margin-left: auto; pushes the label to the right */
+    /* align-self: flex-end; */
+    margin-right: 48px;
+}

@@ -1,0 +1,26 @@
+.button-container {
+    display: flex;  
+    justify-content: space-between;
+    width: 85%;
+    margin: 30px auto;
+}
+  
+.nav-btn {
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    font-family: Typlod;
+    font-size: 18px;
+}
+
+.nav-btn-selected {
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #D6BCFA;
+    font-family: Typlod;
+    font-size: 18px;
+}
