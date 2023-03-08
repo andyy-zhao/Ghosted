@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import octagon from '../../assets/octagon.svg'
+import ghostIcon from '../../assets/ghost.png'
 import './NavBar.css';
 
 export const NavBar = () => {
@@ -11,12 +11,13 @@ export const NavBar = () => {
                 <Navbar.Brand href="#home" className='navbar-brand'>
                     <img
                         alt=""
-                        src={octagon}
+                        src={ghostIcon}
                         width="40"
                         height="40"
                         className="d-inline-block align-top"
                     />
-                        <span className="website-name">NAME <span className="website-name-small">OF THE</span> WEBSITE</span>
+                        {/* <span className="website-name">iMESSAGE <span className="website-name-small">is</span> REVISITED</span> */}
+                        <span className="website-name">GHOSTED</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>

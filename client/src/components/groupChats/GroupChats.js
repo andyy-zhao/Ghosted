@@ -21,11 +21,8 @@ export const GroupChats = () => {
                             </div>
                             <div className="body">
                                     <h4 className="body-title">
-                                    Who texts the most in
+                                    Most active group chats
                                     </h4>
-                                    <p className="body-desc">
-                                        excludes group chats
-                                    </p>
                             </div>
                         </div>
                         <div style={{paddingLeft: "40px"}}>

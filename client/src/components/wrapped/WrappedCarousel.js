@@ -39,7 +39,7 @@ export const WrappedCarousel = () => {
             let topfriend = "";
             const names = await getNames();
             for (let i = 0; i < names.length; i++) {
-                if (names[i].Number === newResult) {
+                if (names[i].Number.includes(newResult)) {
                     topfriend = names[i].Name;
                     break;
                 }

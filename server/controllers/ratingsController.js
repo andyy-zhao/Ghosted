@@ -39,7 +39,7 @@ const getRatings = async (req, res) => {
 const getNames = async (req, res) => { 
     let sql = `SELECT 
 	substr(ZSTRINGFORINDEXING, 1, instr(ZSTRINGFORINDEXING, ' ') - 1) AS Name,
-	RTRIM(SUBSTR(ZSTRINGFORINDEXING, LENGTH(ZSTRINGFORINDEXING) - 10)) AS Number
+	RTRIM(SUBSTR(ZSTRINGFORINDEXING, LENGTH(ZSTRINGFORINDEXING) - 25)) AS Number
     FROM ZABCDCONTACTINDEX`;
     try {
         dbNames.all(sql,[],(err, rows) => {
@@ -204,4 +204,65 @@ FROM
     }
 };
 
-module.exports = {getRatings: getRatings, getNames: getNames, getTopWord: getTopWord, getTopEmoji: getTopEmoji, getReceivedWords: getReceivedWords};
+const getAverageSentLength = async (req, res) => { 
+    let sql = `SELECT AVG(LENGTH(text)) AS avg_message_length
+    FROM message
+    WHERE is_sent=1;`;
+    try {
+        db.all(sql,[],(err, rows) => {
+            if (err) {
+                res.status(400).json({"error":err.message});
+                return;
+            }
+            res.status(200).json(rows);
+        })
+    } catch (err) {
+        console.error(err.message);
+        return res.status(500).json({error: 'Internal server error'});
+    }
+};
+
+const getAverageReceivedLength = async (req, res) => { 
+    let sql = `SELECT AVG(LENGTH(text)) AS avg_message_length
+    FROM message
+    WHERE is_sent=0;`;
+    try {
+        db.all(sql,[],(err, rows) => {
+            if (err) {
+                res.status(400).json({"error":err.message});
+                return;
+            }
+            res.status(200).json(rows);
+        })
+    } catch (err) {
+        console.error(err.message);
+        return res.status(500).json({error: 'Internal server error'});
+    }
+};
+
+const getLeftOnReadTimes = async (req, res) => { 
+    let sql = `SELECT
+	COUNT(*) as count
+FROM
+	message
+WHERE
+	is_from_me = 1
+	AND cache_has_attachments = 0
+	AND date_read > 0;`;
+    try {
+        db.all(sql,[],(err, rows) => {
+            if (err) {
+                res.status(400).json({"error":err.message});
+                return;
+            }
+            res.status(200).json(rows);
+        })
+    } catch (err) {
+        console.error(err.message);
+        return res.status(500).json({error: 'Internal server error'});
+    }
+};
+
+module.exports = {getRatings: getRatings, getNames: getNames, getTopWord: getTopWord, getTopEmoji: getTopEmoji, 
+    getReceivedWords: getReceivedWords, getAverageSentLength: getAverageSentLength, 
+    getAverageReceivedLength: getAverageReceivedLength, getLeftOnReadTimes: getLeftOnReadTimes};

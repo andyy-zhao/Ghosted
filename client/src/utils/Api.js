@@ -134,3 +134,33 @@ export const getGroupChats = async () => {
     throw error;
   }
 }
+
+export const getAverageSentLength = async () => {
+  try {
+    const response = await client.get('/averagesentlength');
+    return response.data;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+}
+
+export const getAverageReceivedLength = async () => {
+  try {
+    const response = await client.get('/averagereceivedlength');
+    return response.data;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+}
+
+export const getLeftOnReadTimes = async () => {
+  try {
+    const response = await client.get('/leftonread');
+    return response.data;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+}

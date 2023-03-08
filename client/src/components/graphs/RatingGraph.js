@@ -13,11 +13,16 @@ import { useEffect, useState } from 'react';
 
 function getName(phoneNumber, names) {
     let result = ""
+    let found = false;
     for (let i = 0; i < names.length; i++) {
-        if (names[i].Number === phoneNumber) {
+        if (names[i].Number.includes(phoneNumber)) {
             result = names[i].Name;
+            found = true;
             break;
         }
+    }
+    if (!found) {
+        result = phoneNumber;
     }
     return result;
 }

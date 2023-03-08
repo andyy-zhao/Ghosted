@@ -1,6 +1,6 @@
 import './Footer.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import octagon from '../../assets/octagon.svg'
+import ghostIcon from '../../assets/ghost.png'
 import locationIcon from '../../assets/location.png'
 import productIcon from '../../assets/product.png'
 import githubIcon from '../../assets/github.png';
@@ -15,10 +15,10 @@ export const Footer = () => {
                         <Row className="title-row">
                             <span className="website-name-1"><img
                             alt=""
-                            src={octagon}
+                            src={ghostIcon}
                             width="40"
                             height="40"
-                            className="d-inline-block align-top"/> NAME <span className="website-name-small">OF THE</span> WEBSITE</span>
+                            className="d-inline-block align-top"/> GHOSTED</span>
                         </Row>
                         <Row className="first-col-2nd-row">
                             <span>

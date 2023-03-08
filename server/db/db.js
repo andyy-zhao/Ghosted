@@ -1,7 +1,11 @@
 const sqlite3 = require('sqlite3').verbose();
+const path = require('path');
 
-const DBSOURCE = './db/chat.db';
-const DBSOURCENAMES = './db/AddressBook-v22.abcddb';
+// Get the path to the file on your desktop
+const DBSOURCE = path.join(require('os').homedir(), 'Desktop', 'chat.db');
+const DBSOURCENAMES = path.join(require('os').homedir(), 'Desktop', 'AddressBook-v22.abcddb');
+// const DBSOURCE = './db/chat.db';
+// const DBSOURCENAMES = './db/AddressBook-v22.abcddb';
 
 let db = new sqlite3.Database(DBSOURCE, sqlite3.OPEN_READONLY, (err) => {
     if (err) {
