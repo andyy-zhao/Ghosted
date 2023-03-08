@@ -3,9 +3,7 @@ import {
   StackedCarousel,
   ResponsiveContainer
 } from "react-stacked-center-carousel";
-import Fab from "@material-ui/core/Fab";
-import KeyboardArrowLeftIcon from "@material-ui/icons/KeyboardArrowLeft";
-import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
+import Fab from "@mui/material/Fab";
 import "./Slide.css";
 import { Slide } from "./Slide";
 import { getAverageSentLength, getAverageReceivedLength, getLeftOnReadTimes } from '../../utils/Api';
@@ -85,10 +83,10 @@ export const CardSlider = () => {
           size="small"
           onClick={() => ref.current?.goBack()}
         >
-          <KeyboardArrowLeftIcon style={{ fontSize: 30 }} />
+          {/* <KeyboardArrowLeftIcon style={{ fontSize: 30 }} /> */}
         </Fab>
         <Fab className="card-button right" size="small" onClick={stuff}>
-          <KeyboardArrowRightIcon style={{ fontSize: 30 }} />
+          {/* <KeyboardArrowRightIcon style={{ fontSize: 30 }} /> */}
         </Fab>
       </div>
     </div>
