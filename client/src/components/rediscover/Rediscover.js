@@ -41,18 +41,28 @@ export const Rediscover = () => {
     }, []);
 
     let sentAndReceived = parseInt(sent) + parseInt(received);
-    if (sentAndReceived > 9999) {
+    if (sentAndReceived > 99999) {
+        sentAndReceived = sentAndReceived.toString();
+        sentAndReceived = sentAndReceived.slice(0,3) + "," + sentAndReceived.slice(3)
+    } else if (sentAndReceived > 9999) {
         sentAndReceived = sentAndReceived.toString();
         sentAndReceived = sentAndReceived.slice(0,2) + "," + sentAndReceived.slice(2)
     }
+
     let newSent = sent;
-    if (newSent > 9999) {
+    if (newSent > 99999) {
+        newSent= newSent.toString();
+        newSent = newSent.slice(0,3) + "," + newSent.slice(3)
+    } else if (newSent > 9999) {
         newSent= newSent.toString();
         newSent = newSent.slice(0,2) + "," + newSent.slice(2)
     }
 
     let newReceived = received;
-    if (newReceived > 9999) {
+    if (newReceived > 99999) {
+        newReceived= newReceived.toString();
+        newReceived = newReceived.slice(0,3) + "," + newReceived.slice(3)
+    } else if (newReceived > 9999) {
         newReceived= newReceived.toString();
         newReceived = newReceived.slice(0,2) + "," + newReceived.slice(2)
     }
