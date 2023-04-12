@@ -14,8 +14,8 @@ Welcome to Ghosted! Have you ever wondered what kind of texter you are? This app
 * Messages filtered by time, person, date, group chats, etc.
 
 ## Screenshots
-![Landing Page](/client/src/assets/screenshots/landing_page.png?raw=true)
-![Rediscover Relationships](/client/src/assets/screenshots/rediscover.png?raw=true)
+<img src="/client/src/assets/screenshots/landing_page.png?raw=true" alt="Landing Page" width="400" height="auto">
+<img src="/client/src/assets/screenshots/rediscover.png?raw=true" alt="Rediscover Relationships" width="400" height="auto">
 ![Time of Day](/client/src/assets/screenshots/timeday.png?raw=true)
 ![Words & Emojis](/client/src/assets/screenshots/emojis.png?raw=true)
 
