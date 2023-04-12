@@ -33,7 +33,7 @@ Next, in Macbook Finder, locate ```AddressBook-v22.abcddb```. This database will
 
 **Installation:**
 
-```npm install`` in the terminal in the root folder. Then, cd into server ```cd server``` and run ```npm install``` in the terminal.
+```npm install``` in the terminal in the root folder. Then, cd into server ```cd server``` and run ```npm install``` in the terminal.
 
 Open a new terminal window and cd into client ```cd client```. Run ```npm install```. 
 
