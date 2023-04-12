@@ -15,7 +15,9 @@ Welcome to Ghosted! Have you ever wondered what kind of texter you are? This app
 
 ## Screenshots
 ![Landing Page](/client/src/assets/screenshots/landing_page.png?raw=true)
-![Wrapped](/client/src/assets/screenshots/wrapped.png?raw=true) ![Rediscover Relationships](/client/src/assets/screenshots/rediscover.png?raw=true)
+![Rediscover Relationships](/client/src/assets/screenshots/rediscover.png?raw=true)
+![Time of Day](/client/src/assets/screenshots/timeday.png?raw=true)
+![Words & Emojis](/client/src/assets/screenshots/emojis.png?raw=true)
 
 ## Installation and Setup:
 These instructions will get you a copy of the project up and running on your local machine. As of now, this is the only way for you to be able to access this application as a way to ensure personal privacy. 
